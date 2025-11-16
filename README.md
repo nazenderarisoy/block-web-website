@@ -39,24 +39,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.viviennewestwood.com/
   #### Screenshot(s) van de eerste pagina (small screen): 
   Merken
-  <img src="readme-images/homescreen.jpeg" width="375px" alt="homepagina">
-  <img src="readme-images/homescreen1.jpeg" width="375px" alt="homepagina.">
-  <img src="readme-images/homescreen2.jpeg" width="375px" alt="homepagina">
-  <img src="readme-images/homescreen3.jpeg" width="375px" alt="homepagina.">
-  <img src="readme-images/homescreen4.jpeg" width="375px" alt="homepagina.">
-  <img src="readme-images/homescreen5.jpeg" width="375px" alt="homepagina.">
-  <img src="readme-images/homescreen6.jpeg" width="375px" alt="homepagina.">
-  <img src="readme-images/homescreen7.jpeg" width="375px" alt="homepagina.">
-  <img src="readme-images/homescreen8.jpeg" width="375px" alt="homepagina.">
+  <img src="readme-images/homepagina.jpeg" width="375px" alt="homepagina">
+  <img src="readme-images/homepagina1.jpeg" width="375px" alt="homepagina.">
+  <img src="readme-images/homepagina2.jpeg" width="375px" alt="homepagina">
+  <img src="readme-images/homepagina3.jpeg" width="375px" alt="homepagina.">
+  <img src="readme-images/homepagina4.jpeg" width="375px" alt="homepagina.">
+  <img src="readme-images/homepagina5.jpeg" width="375px" alt="homepagina.">
+  <img src="readme-images/homepagina6.jpeg" width="375px" alt="homepagina.">
+  <img src="readme-images/homepagina7.jpeg" width="375px" alt="homepagina.">
+  <img src="readme-images/homepagina8.jpeg" width="375px" alt="homepagina.">
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  hier de naam van de pagina
+  <img src="readme-images/productpagina.jpeg" width="375px" alt="productpagina">  
   <img src="readme-images/productpagina1.jpeg" width="375px" alt="productpagina">
   <img src="readme-images/productpagina2.jpeg" width="375px" alt="productpagina">
-  <img src="readme-images/productpagina3.jpeg" width="375px" alt="productpagina">
-  <img src="readme-images/productpagina4.jpeg" width="375px" alt="productpagina">
- 
+  <img src="readme-images/productpagina3.jpeg" width="375px" alt="productpagina"> 
 </details>
 
 
