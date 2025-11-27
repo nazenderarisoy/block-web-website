@@ -182,17 +182,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+ Wat ik dacht goed te doen bleek dus best fout te zijn want ik gebruikte voor witruimte om te kijken hoe het ongeveer een beetje in elkaar moest zitten veel margin top, bottom, left en right wat natuurlijk heel vies is (bah!) vandaag (27nov) heb ik ook van sanne geleerd hoe ik het beter met padding kan doen en niet zo veel code nodig heb en wanneer ik grid en flexbox gebruik dat het ook deels responsive is. Oh ook zo min mogelijk position:absolute gebruiken want daardoor gingen veel teksten alle kanten op die ik juist wel een vaste plek moesten hebben. Maar ik heb dat nu gelukkig met behulp van Sanne kunnen aanpassen.Ik loop nu met mijn homepagina best wel oke vind ik maar het blijft nog wel een dingetje voor mij om te zoeken wat ik nou verkeerd heb gedaan en wat nou juist werkt. Ik moet naast het maken van mijn productpagina ook nog deels mijn footer en header afmaken want die zien er ook nog niet spik en span uit. op de foto kan je zien dat ik nog twee elementen van mijn footer moet aanpassen en de header nog zeker. Maar dat wil ik dus graag aan Sanne vragen hoe ik dat het best kan aanpakken en ook nog een paar vragen over mijn product pagina caroussel want die vind ik ook best wel lastig er uit zien. Buiten de lastige dingen vind ik dat ik alsnog best goed opweg ben.
+<img src="readme-images/headerenfooter.jpg" alt="headerenfooter">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Naz            | Jonah              | Selina       | Callista 4       |
+  | Header &footer | caroussel          | Buttons&links|                  |
+  | caroussel      | en dit             | en ik dit    |                  |
+  | footer css     | dit als er tijd is | nog een punt |                  |
+  | buttons        |                    |              |                  |
 
 
   ### Verslag van meeting
