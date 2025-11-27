@@ -157,12 +157,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Nazender       | Selina             | Jonah        | Callista         |
-  | Css pagina's   | css                | header svg   | nav&header       |
-  | header & footer | flexbox & grid     | icoon header | h1 hema logo     |
-  | svg foto's     | article&section    |              | visually hidden  |
-  |                |                    |              |                  |
-
+  | Nazender       | Selina             | Jonah         | Callista         |
+  | Css pagina's   | css                | header svg    | nav&header       |
+  | header & footer| flexbox & grid     | icoon header  | h1 hema logo     |
+  | svg foto's     | article&section    |               | visually hidden  |
+  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -290,7 +289,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1.https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details (gekregen van Jules en Mattijs tijdens 1e voortgangsgesprek) 
   2. bron 2
   3. ...
 
