@@ -3,78 +3,110 @@ body {
 }
 
 /* custom propreties */
+/* :root {
+ 
+} */
+
+
 
 /* font */
 
 @font-face {
-    font-family: "westwood";
-    src: url(../font/TimesNewRomanRegular.woff2);
-    /* regular */
+	font-family: "westwood";
+	src: url(../font/TimesNewRomanRegular.woff2);
+	/* regular */
 }
 
 @font-face {
-    font-family: "westwood";
-    src: url(../font/NeueHelvetica65Medium.woff2);
-    /* medium */
+	font-family: "westwood";
+	src: url(../font/NeueHelvetica65Medium.woff2);
+	/* medium */
 }
 
 @font-face {
-    font-family: "westwood";
-    src: url(../font/NeueHelvetica55Roman.woff2);
-    /* bold */
+	font-family: "westwood";
+	src: url(../font/NeueHelvetica55Roman.woff2);
+	/* bold */
 }
+
+.skip-link{
+	position: absolute;
+	left: 999em;
+	&:focus{
+		left:0em;
+		position:absolute;
+	}
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-underline-offset: .8em;
+    text-decoration-thickness: .6em;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+
+
 /************************* header ******************/
-header {
-	position: fixed;
-	box-sizing: inherit;
+header nav {
 	display: flex;
-	padding: 1.3em;
-	max-width: 50em;
-	width: 100%;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0));
-
-}
-
-header:hover {
-	color: white;
+	align-items: flex-start;
+	justify-content: space-around;
+	
 }
 
 header ul {
 	display: flex;
 	list-style: none;
+	justify-content:space-between;
+	align-items: flex-start;
 	width: 100%;
+	padding: 0.5em 2em;
+	gap: 1rem;
+}
+
+header li {
+	display: flex;
+	align-items: flex-start;
+	margin: auto;
+	
 }
 
 header li:nth-of-type(1) button {
 	background-color: transparent;
 	border: none;
+	color: black;
 }
 
 header li:nth-of-type(2) svg {
 	height: auto;
 	width: auto;
-	border-color: black;
-	color: black;
+	border-color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
 }
 
 header li:nth-of-type(3) svg {
 	height: auto;
 	width: 7.5em;
-	color: black;
+	color: rgb(0, 0, 0);
+	
 }
 
 header li:nth-of-type(4) svg {
-	height: auto;
-	width: auto;
-	border-color: black;
-	color: black;
+	color: rgb(0, 0, 0);
 }
+
 
 header li:nth-of-type(5) svg {
 	height: auto;
 	width: auto;
 	border-color: black;
 	color: black;
+	
 }
 
 /************** FOOTER ***********************/
@@ -147,7 +179,7 @@ footer:nth-of-type(1) form h3 {
 }
 
 footer:nth-of-type(1) form input {
-	border: none;
+	border: white;
 	padding: 0.5rem 1em;
 	font-size: 1rem;
 	outline: none;
@@ -167,52 +199,102 @@ footer:nth-of-type(1) form svg {
 	padding: 4em 3em;
 }
 
-
 /* social media nav */
-footer:nth-of-type(2) nav {
+footer section:nth-of-type(2) {
+	font-family: "westwood";
+	background-color: rgb(255, 255, 255);
+	padding: 2rem 2.5rem 0rem 0rem;
+}
+
+footer section:nth-of-type(2) nav ul {
+	list-style-type: "";
+	display: flex;
+	justify-content: flex-start;
+	gap:0.25rem;
+	padding-left: 1.5em;
+}
+
+footer section:nth-of-type(2) nav li {
+	margin: 0;
+	padding: 0;
+	flex-basis: 8%;
+	padding-right: 0.5rem;
+}
+
+footer section:nth-of-type(2) nav h3 {
+	padding: 0rem 0rem 0rem 1.5rem; 
+	margin: 0;   
+	text-transform: uppercase;
 	font-family: inherit;
+	font-size: smaller;
+
+	line-height: 1.4;
+	letter-spacing: 0.09375rem;
 }
 
-footer:nth-of-type(2) section ul {
-	list-style: none;
+footer section:nth-of-type(2) nav svg {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	color: black;
+	
 }
 
-footer:nth-of-type(2) section h3 {
-	font-family: inherit;
+footer section:nth-of-type(2) nav a {
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
 }
-
-footer:nth-of-type(2) section li {
-	font-family: inherit;
-}
-
-footer:nth-of-type(2) section svg {
-	font-family: inherit;
-}
-
-
-
-
-
-
-
 
 
 
 
 
 /* detials nav */
-section:nth-of-type(1) details {
+footer section:nth-of-type(3) {
 	font-family: "westwood";
+	background-color: rgb(255, 255, 255);
 }
 
-section:nth-of-type(1) details summary {
+footer section:nth-of-type(3) nav details {
 	font-family: inherit;
+	text-transform: uppercase;
+	padding: 1.5em 1em 2em 1.5em;
 }
 
-section:nth-of-type(1) details ul {
+footer section:nth-of-type(3) nav summary {
+	margin: 0;   
+	text-transform: uppercase;
 	font-family: inherit;
+	font-size: smaller;
+
+	line-height: 1.4;
+	letter-spacing: 0.09375rem;
 }
 
-section:nth-of-type(1) details a {
+footer section:nth-of-type(3) nav ul {
 	font-family: inherit;
+	list-style-type: "";
+	display: flex;
+  	flex-direction: column;
+	gap: 0.75rem;
+}
+
+footer section:nth-of-type(3)nav li {
+	font-family: inherit;
+	list-style-type: "";
+	padding-bottom: 5em;
+
+}
+
+footer section:nth-of-type(3) nav a {
+	font-family: inherit;
+	color: rgba(63, 63, 63, 0.752);
+	margin: 0;   
+	text-transform: none;
+	font-family: inherit;
+	font-size: small;
 }

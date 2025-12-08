@@ -1,0 +1,356 @@
+/* header */
+header {
+    position: sticky;
+    z-index: 1;
+    min-width: 100%;
+    background-color: rgba(255, 255, 255, 0.28);
+    padding: 0;
+    margin: 0;
+    top: 0;
+    /* van eigen website overgenomen begrijp het niet */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0));
+}
+
+/* section 1  breadcrumbs */
+main:nth-of-type(1) section nav {
+    width: 100%;
+    font-family: "westwood";
+    background-color: rgb(255, 0, 183);
+}
+
+main:nth-of-type(1) section nav ul li {
+    display: flex;
+    align-items: center;
+    list-style-type: "";
+    color: black;
+}
+
+/* section:nth-of-type(1) nav ul li {
+    display: block;
+}
+
+section:nth-of-type(1) nav ul li a:nth-of-type(2) {
+    display: none;
+}  */
+
+section:nth-of-type(1) a {
+    color: black;
+}
+
+
+
+/* section 2 caroussel tshirt */
+/* snap ik niet code van Sanne zelf gekregen hihi */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgb(255, 255, 255);
+}
+
+@media (width > 40em) {
+    section {
+        flex-direction: row;
+    }
+}
+
+/* NAV */
+section nav {
+    order: 1;
+}
+
+@media (width > 40em) {
+    section nav {
+        order: 0;
+    }
+}
+
+section nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: "";
+    display: flex;
+    gap: 1em;
+}
+
+
+@media (width > 40em) {
+    section nav ul {
+        flex-direction: column;
+    }
+}
+
+section nav ul img {
+    display: block;
+}
+
+/* FOTO'S */
+
+main section:nth-of-type(2)>ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: "";
+
+    display: flex;
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+
+    scroll-behavior: smooth;
+
+    /* hoef je niet uit te kunnen leggen */
+    anchor-name: --carousel;
+
+    &::scroll-button(*) {
+        position: fixed;
+        position-anchor: --carousel;
+
+        appearance: none;
+        border: none;
+        background: rgb(255 255 255 / .5);
+        width: 3em;
+        height: 3em;
+    }
+
+    &::scroll-button(right) {
+        position-area: center;
+        justify-self: end;
+        content: '→' / 'Next';
+    }
+
+    &::scroll-button(left) {
+        /* hoef je niet uit te kunnen leggen */
+        position-area: center;
+        justify-self: start;
+        content: '←' / 'Previous';
+    }
+}
+
+section>ul li {
+    flex-basis: 100%;
+    flex-shrink: 0;
+
+    scroll-snap-align: center;
+}
+
+section>ul li img {
+    display: block;
+}
+
+
+
+
+/* section 3 maat en kleur prijs etc */
+section:nth-of-type(3) {
+    background-color: rgb(148, 3, 3);
+    font-family: "westwood";
+    gap: 1rem;
+    padding: 0 1.5rem 3rem 2rem;
+}
+
+section:nth-of-type(3) h1 {
+    padding-left: 0.5rem;
+    display: flex;
+}
+
+/* section:nth-of-type(3) p {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;  
+    align-items: baseline;
+} */
+
+section:nth-of-type(3) svg {
+    color: white;
+}
+
+section:nth-of-type(3) p strong {
+    text-transform: uppercase;
+}
+
+section:nth-of-type(3) li {
+    list-style-type: "";
+    display: flex;
+}
+
+section:nth-of-type(3) a {
+    color: black;
+}
+
+section:nth-of-type(3) ul {
+    list-style-type: "";
+	display: flex;
+	justify-content: flex-start;
+	gap:0em;
+	padding-left: 1.5em;
+
+}
+
+section:nth-of-type(3) ul button {
+    width: 3em;             
+    height: 3em;            
+    border:none;
+    background-color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section:nth-of-type(3) button[aria-label="select white color"] {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+}
+
+section:nth-of-type(3) button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+section:nth-of-type(3) > button:last-of-type {
+    background-color: black;
+    color: white;
+    border: none;
+    letter-spacing: 0.05em;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+/* section 4 beschrijving details */
+section:nth-of-type(4) {
+    background-color: rgb(255, 255, 255);
+    font-family: "westwood";
+    padding: 1rem;
+}
+
+/* voortgangsgesprek 3 - Jules en Matthijs hebben mij hiermee geholpen tijdens het voortgangsgesprek ik snap het deels */
+section:nth-of-type(4) details summary {
+    text-transform: uppercase;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: 1s ease;
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        border-top: 1px solid black;
+        width: 16px;
+        height: 0;
+        right: 20px;
+        top: 50%;
+        transition: .4s ease;
+     }
+
+    &::after{
+        transform: rotate(90deg);
+    }
+}
+
+section:nth-of-type(4) details[open] summary::after,
+section:nth-of-type(4) details[open] summary::before {
+    transform: rotate(-90deg);
+}
+
+section:nth-of-type(4) details[open] summary::after {
+    transform: rotate(0deg);
+}
+section:nth-of-type(4) details[open] summary::before {
+    opacity: 0;
+}
+
+section:nth-of-type(4) a {
+    padding-top: 1em;
+    color: black;
+}
+
+/* section 5 carousel aanbevolen producten */
+section:nth-of-type(5) {
+    background-color: rgb(255, 255, 255);
+    font-family: "westwood";
+}
+
+section:nth-of-type(5) h2 {
+    font-weight: 400;
+    line-height: 1.26;
+    font-size: 22px;
+    font-family: inherit;
+    position: relative;
+    z-index: 1;
+    padding: 2rem 0rem 0rem 1rem;
+}
+
+
+main section:nth-of-type(5) ul {
+    margin: 0;
+    padding: 1rem 7.5rem 0rem 1rem;
+    list-style-type: "";
+
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+
+    gap: .5em;
+}
+
+section:nth-of-type(5) li {
+    flex-basis: 80%;
+    flex-shrink: 0;
+}
+
+
+section:nth-of-type(5) article {
+    font-family: inherit;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    width: 100%;
+}
+
+
+section:nth-of-type(5) h3 {
+    font-size: inherit;
+    order: 2;
+}
+
+section:nth-of-type(5) p {
+    font-size: inherit;
+    font-family: "westwood";
+    justify-content: center;
+    align-items: center;
+    line-height: 0.2rem;
+    order: 3;
+}
+
+section:nth-of-type(5) a img {
+    width: 100%;
+    aspect-ratio: 5/6;
+    order: 1;
+}
