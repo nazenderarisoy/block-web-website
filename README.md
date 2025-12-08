@@ -197,11 +197,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
+  - Tot nu toe verloopt het wel oke alleen is het nog tricky hoe ik met mijn productpagina verder ga, maar door de hulp van Sanne met de carousel ben ik een stuk verder dan ik eigenlijk al gedacht had.
+  - Picture element gekregen van sanne waardoor responsiveness van afbeelding soepel verloopt.
 </details>
 
 
@@ -234,11 +231,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Naz            | Jonah              | Selina       | Callista         |
+  | + - transition | ---                | logo & svg   | ---              |
+  | breadcrumbs    | en dit             | foc&fot      | en dan ik dat    |
+  | header         | dit als er tijd is | hamburgermenu| dit wil ik zeker |
+  | carousel       | ...                | grid/margin  | ...              |
 
 
   ### Verslag van meeting
@@ -290,7 +287,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Vermeld de bronnen ook in je code.
 
   1.https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details (gekregen van Jules en Mattijs tijdens 1e voortgangsgesprek) 
-  2. bron 2
+  2. order css code waarmee ik de plaats heb veranderd : https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/order 
   3. ...
 
 </details>
