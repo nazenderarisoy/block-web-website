@@ -52,11 +52,9 @@ a:hover {
 
 
 /************************* header ******************/
+
 header nav {
 	display: flex;
-	align-items: flex-start;
-	justify-content: space-around;
-	
 }
 
 header ul {
@@ -65,7 +63,7 @@ header ul {
 	justify-content:space-between;
 	align-items: flex-start;
 	width: 100%;
-	padding: 0.5em 2em;
+	padding: 0.5em 0 0 0;
 	gap: 1rem;
 }
 

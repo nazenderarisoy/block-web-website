@@ -11,38 +11,38 @@ header {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0));
 }
 
-/* section 1  breadcrumbs (hulp van matthijs gekregen snap het zelf niet) */
-section:nth-of-type(1) ul {
+/* section 1  breadcrumbs (hulp van matthijs gekregen) */
+main section:nth-of-type(1)  ul {
     font-family: "westwood";
     padding:1em;
     background-color: rgb(255, 0, 183);
 }
 
-section:nth-of-type(1) ul li {
+main section:nth-of-type(1) ul li {
   display: none;
 }
 
-section:last-of-type(1) ul li {
+main section:nth-of-type(1) ul li {
    display: inline-block;
 }
 
-section:last-of-type(1) ul li::before {
+main section:nth-of-type(1) ul li::before {
     content: '←';
     color: #999;
 }
 
-@media (min-width: 32em) {
-    section:nth-of-type(1) ul li {
+@media (min-width: 50em) {
+    main section:nth-of-type(1) ul li {
         display: inline-block;
     }
 
-    section:last-of-type(1) ul li::after {
+    main section:nth-of-type(1) ul li::after {
         content: '→';
         padding: 0 0.25em 0 0.5em;
         color: #999;
     }
-    section:last-of-type(1) ul li::before, section:last-of-type(1) ul li::after {
-        content: '';
+    main section:nth-of-type(1) ul li::before, main section:nth-of-type(1) ul li::after {
+        content: '/';
       }
 }
 

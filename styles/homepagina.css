@@ -23,6 +23,7 @@ section:nth-of-type(1) h1 {
     text-align: center;
     font-size: 2.5em;
     line-height: 3rem;
+    order:2;
     color: var(--color-text-home)
 }
 
@@ -31,11 +32,14 @@ section:nth-of-type(1) img {
     position: relative;
     width: 100%;
 
-    order: -1;
+    order: 1;
 }
 
 section:nth-of-type(1) a {
     color: black;
+    text-align: center;
+    order:3;
+    padding: 1em;;
 }
 
 
