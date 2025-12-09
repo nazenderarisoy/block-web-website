@@ -11,32 +11,40 @@ header {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0));
 }
 
-/* section 1  breadcrumbs */
-main:nth-of-type(1) section nav {
-    width: 100%;
+/* section 1  breadcrumbs (hulp van matthijs gekregen snap het zelf niet) */
+section:nth-of-type(1) ul {
     font-family: "westwood";
+    padding:1em;
     background-color: rgb(255, 0, 183);
 }
 
-main:nth-of-type(1) section nav ul li {
-    display: flex;
-    align-items: center;
-    list-style-type: "";
-    color: black;
+section:nth-of-type(1) ul li {
+  display: none;
 }
 
-/* section:nth-of-type(1) nav ul li {
-    display: block;
+section:last-of-type(1) ul li {
+   display: inline-block;
 }
 
-section:nth-of-type(1) nav ul li a:nth-of-type(2) {
-    display: none;
-}  */
-
-section:nth-of-type(1) a {
-    color: black;
+section:last-of-type(1) ul li::before {
+    content: '←';
+    color: #999;
 }
 
+@media (min-width: 32em) {
+    section:nth-of-type(1) ul li {
+        display: inline-block;
+    }
+
+    section:last-of-type(1) ul li::after {
+        content: '→';
+        padding: 0 0.25em 0 0.5em;
+        color: #999;
+    }
+    section:last-of-type(1) ul li::before, section:last-of-type(1) ul li::after {
+        content: '';
+      }
+}
 
 
 /* section 2 caroussel tshirt */
@@ -49,7 +57,7 @@ img {
     max-width: 100%;
 }
 
-section {
+section:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -135,7 +143,7 @@ main section:nth-of-type(2)>ul {
     }
 }
 
-section>ul li {
+section:nth-of-type(2)>ul li {
     flex-basis: 100%;
     flex-shrink: 0;
 
@@ -151,26 +159,20 @@ section>ul li img {
 
 /* section 3 maat en kleur prijs etc */
 section:nth-of-type(3) {
-    background-color: rgb(148, 3, 3);
+    background-color: rgb(255, 255, 255);
     font-family: "westwood";
     gap: 1rem;
     padding: 0 1.5rem 3rem 2rem;
 }
 
 section:nth-of-type(3) h1 {
-    padding-left: 0.5rem;
+    padding:0;
     display: flex;
 }
 
-/* section:nth-of-type(3) p {
-    position: relative;
-    flex-wrap: wrap;
-    display: flex;  
-    align-items: baseline;
-} */
-
 section:nth-of-type(3) svg {
-    color: white;
+    display: flex;
+   border-color: black;
 }
 
 section:nth-of-type(3) p strong {
@@ -190,8 +192,8 @@ section:nth-of-type(3) ul {
     list-style-type: "";
 	display: flex;
 	justify-content: flex-start;
-	gap:0em;
-	padding-left: 1.5em;
+	gap:1em;
+	padding:0;
 
 }
 
@@ -229,7 +231,8 @@ section:nth-of-type(3) > button:last-of-type {
     border: none;
     letter-spacing: 0.05em;
     padding: 1rem;
-    width: 100%;
+    height: 48px;
+    max-width: 100%;
     text-align: center;
     cursor: pointer;
 }
@@ -283,6 +286,10 @@ section:nth-of-type(4) details[open] summary::before {
 section:nth-of-type(4) a {
     padding-top: 1em;
     color: black;
+}
+
+section:nth-of-type(4) p {
+ font-size: smaller;
 }
 
 /* section 5 carousel aanbevolen producten */
