@@ -107,6 +107,17 @@ header li:nth-of-type(5) svg {
 	
 }
 
+@media(min-width: 600px) {
+	header ul{
+		
+	}
+
+
+	header li:nth-of-type(1) button {
+		/* padding: 2rem 0 0 0; */
+	}
+}
+
 /************** FOOTER ***********************/
 /****************** eerste nav ***************/
 footer section:nth-of-type(1) nav {
