@@ -34,7 +34,7 @@ main section:nth-of-type(1) ul li:last-of-type:before {
     color: #020202;
 }
 
-@media (min-width: 50em) {
+@media (width >60em) {
     main section:nth-of-type(1) ul li {
         display: inline-block;
     }
@@ -164,18 +164,19 @@ section>ul li img {
 section:nth-of-type(3) {
     background-color: rgb(255, 255, 255);
     font-family: "westwood";
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 0 1.5rem 3rem 2rem;
+    display:grid;
 }
 
 section:nth-of-type(3) h1 {
-    padding:0;
-    display: flex;
+    font-family: inherit;
+    font-weight: 300;
 }
 
 section:nth-of-type(3) svg {
     display: flex;
-   border-color: black;
+    border-color: black;
 }
 
 section:nth-of-type(3) p strong {
@@ -189,6 +190,8 @@ section:nth-of-type(3) li {
 
 section:nth-of-type(3) a {
     color: black;
+    display: flex;
+    padding:0;
 }
 
 section:nth-of-type(3) ul {
@@ -197,7 +200,6 @@ section:nth-of-type(3) ul {
 	justify-content: flex-start;
 	gap:1em;
 	padding:0;
-
 }
 
 section:nth-of-type(3) ul button {
@@ -221,7 +223,7 @@ section:nth-of-type(3) button[aria-label="select white color"] {
     background-color: white;
 }
 
-section:nth-of-type(3) button:hover {
+section:nth-of-type(3) >button:last-of-type:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
@@ -233,10 +235,6 @@ section:nth-of-type(3) > button:last-of-type {
     color: white;
     border: none;
     letter-spacing: 0.05em;
-    padding: 1rem;
-    height: 48px;
-    max-width: 100%;
-    text-align: center;
     cursor: pointer;
 }
 
