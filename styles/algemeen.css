@@ -52,88 +52,58 @@ a:hover {
 
 
 /************************* header ******************/
-
 header nav {
-	display: flex;
+	padding: 0 1rem 0 1rem;
 }
-
+  
 header ul {
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	list-style: none;
-	justify-content:space-between;
-	align-items: flex-start;
-	width: 100%;
-	padding: 0.5em 0 0 0;
-	gap: 1rem;
+	gap: 0.5rem;
+	padding: 0;
 }
-
+  
 header li {
 	display: flex;
-	align-items: flex-start;
-	margin: auto;
-	
+	align-items: center;
+}
+  
+header li:nth-of-type(3) {
+	flex: 1;            
+	justify-content: center;
 }
 
-header li:nth-of-type(1) button {
+header button{
 	background-color: transparent;
-	border: none;
+	border:none;
+	cursor: pointer;
+}
+header svg {
+	width: auto;
+	height: auto;
 	color: black;
 }
 
-header li:nth-of-type(2) svg {
+header li:nth-of-type(3) svg{
 	height: auto;
-	width: auto;
-	border-color: rgb(0, 0, 0);
-	color: rgb(0, 0, 0);
-}
-
-header li:nth-of-type(3) svg {
-	height: auto;
-	width: 7.5em;
-	color: rgb(0, 0, 0);
-	
-}
-
-header li:nth-of-type(4) svg {
-	color: rgb(0, 0, 0);
-}
-
-
-header li:nth-of-type(5) svg {
-	height: auto;
-	width: auto;
-	border-color: black;
-	color: black;
-	
-}
-
-@media(min-width: 600px) {
-	header ul{
-		
-	}
-
-
-	header li:nth-of-type(1) button {
-		/* padding: 2rem 0 0 0; */
-	}
+	width: 8em;
 }
 
 /************** FOOTER ***********************/
 /****************** eerste nav ***************/
 footer section:nth-of-type(1) nav {
 	font-family: "westwood";
-	display: grid;
-	align-items: center;
 }
 
 footer section:nth-of-type(1) nav ul {
 	display: grid;
 	justify-items: center;
 	grid-template-columns: repeat(2, 1fr);
-	/* 2 kolommen naast elkaar */
 	gap: 3em;
 	list-style: none;
-	padding: 12rem 1.5rem 4rem 1.5rem;
+	padding: 7rem 1rem 1rem 1rem;
 	margin: 0;
 
 }
@@ -161,6 +131,23 @@ footer section:nth-of-type(1) nav p {
 	line-height: 1.5em;
 	font-size: 0.875em;
 	margin: 0;
+}
+
+@media (min-width: 600px) {
+	footer section:nth-of-type(1) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); 
+		grid-template-rows: repeat(2, auto);  
+		justify-items: center;
+		align-items: center;
+		padding: 4rem 6rem;
+		gap: 0;
+	}
+	footer section:nth-of-type(1) nav {
+		grid-column: 1 / -1; 
+		width: 100%;
+		gap:2em;
+	}
 }
 
 /******************* subcribe form ***************/
@@ -196,7 +183,7 @@ footer:nth-of-type(1) form input {
 }
 
 footer:nth-of-type(1) form button {
-	/* width: auto; */
+	width: auto;
 	border: none;
 	background-color: white;
 	cursor: pointer;
@@ -206,6 +193,14 @@ footer:nth-of-type(1) form svg {
 	width: 24px;
 	height: 24px;
 	padding: 4em 3em;
+}
+
+@media(min-width: 600px) {
+	footer:nth-of-type(1) form {
+		grid-column: 8 / -1;     /* rechterkant */
+		align-self: start;
+		padding: 0;              /* basis-padding hierboven heb je al */
+	}
 }
 
 /* social media nav */
@@ -258,7 +253,9 @@ footer section:nth-of-type(2) nav a {
 	line-height: 0;
 }
 
+@media(min-width: 600px) {
 
+}
 
 
 
@@ -306,4 +303,10 @@ footer section:nth-of-type(3) nav a {
 	text-transform: none;
 	font-family: inherit;
 	font-size: small;
+}
+
+@media(min-width: 600px) {
+	footer section:nth-of-type(3){
+		flex-direction: column;
+	}
 }
