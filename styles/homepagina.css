@@ -218,7 +218,7 @@ section:nth-of-type(4) article a {
     display: inline-block;
 }
 
-@media (width > 64em) {
+@media (min-width: 600px) {
     section:nth-of-type(4) ul {
         display: block;
     }

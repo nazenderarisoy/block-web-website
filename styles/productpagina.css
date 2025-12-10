@@ -9,24 +9,23 @@ header {
 }
 
 /* section 1  breadcrumbs (hulp van matthijs gekregen) */
-main section:nth-of-type(1)  ul {
+main section:nth-of-type(1) ul {
     font-family: "westwood";
-    padding:1em;
+    padding: 1em;
     background-color: rgb(255, 255, 255);
-    
 }
 
-main section:nth-of-type(1)  ul a {
+main section:nth-of-type(1) ul a {
     font-family: inherit;
     color: rgb(0, 0, 0);
 }
 
 main section:nth-of-type(1) ul li {
-  display: none;
+    display: none;
 }
 
 main section:nth-of-type(1) ul li:last-of-type {
-   display: inline-block;
+    display: inline-block;
 }
 
 main section:nth-of-type(1) ul li:last-of-type:before {
@@ -35,6 +34,12 @@ main section:nth-of-type(1) ul li:last-of-type:before {
 }
 
 @media (width >60em) {
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
     main section:nth-of-type(1) ul li {
         display: inline-block;
     }
@@ -44,9 +49,19 @@ main section:nth-of-type(1) ul li:last-of-type:before {
         padding: 0 0.25em 0 0.5em;
         color: #999;
     }
-    main section:nth-of-type(1) ul li::before, main section:nth-of-type(1) ul li::after {
+
+    main section:nth-of-type(1) ul li::before,
+    main section:nth-of-type(1) ul li::after {
         content: '/';
-      }
+    }
+
+    main section:nth-of-type(1) {
+        grid-column: 1/-1;
+    }
+
+    main section:nth-of-type(2) {
+        flex-direction: row;
+    }
 }
 
 
@@ -62,7 +77,6 @@ img {
 
 section:nth-of-type(2) {
     display: flex;
-    flex-direction: column;
     gap: 1em;
     background-color: rgb(255, 255, 255);
 }
@@ -93,9 +107,10 @@ section nav ul {
 }
 
 
-@media (width > 40em) {
+@media (width > 60em) {
     section nav ul {
         flex-direction: column;
+        padding: 0 0 0 1rem;
     }
 }
 
@@ -159,14 +174,13 @@ section>ul li img {
 
 
 
-
 /* section 3 maat en kleur prijs etc */
 section:nth-of-type(3) {
     background-color: rgb(255, 255, 255);
     font-family: "westwood";
     gap: 0.5rem;
     padding: 0 1.5rem 3rem 2rem;
-    display:grid;
+    display: grid;
 }
 
 section:nth-of-type(3) h1 {
@@ -191,21 +205,21 @@ section:nth-of-type(3) li {
 section:nth-of-type(3) a {
     color: black;
     display: flex;
-    padding:0;
+    padding: 0;
 }
 
 section:nth-of-type(3) ul {
     list-style-type: "";
-	display: flex;
-	justify-content: flex-start;
-	gap:1em;
-	padding:0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    padding: 0;
 }
 
 section:nth-of-type(3) ul button {
-    width: 3em;             
-    height: 3em;            
-    border:none;
+    width: 3em;
+    height: 3em;
+    border: none;
     background-color: white;
     text-transform: uppercase;
     cursor: pointer;
@@ -223,14 +237,14 @@ section:nth-of-type(3) button[aria-label="select white color"] {
     background-color: white;
 }
 
-section:nth-of-type(3) >button:last-of-type:hover {
+section:nth-of-type(3)>button:last-of-type:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
     transition: 0.3s;
 }
 
-section:nth-of-type(3) > button:last-of-type {
+section:nth-of-type(3)>button:last-of-type {
     background-color: black;
     color: white;
     border: none;
@@ -238,6 +252,10 @@ section:nth-of-type(3) > button:last-of-type {
     cursor: pointer;
 }
 
+@media (width > 60em) {
+    
+
+}
 
 
 /* section 4 beschrijving details */
@@ -255,6 +273,7 @@ section:nth-of-type(4) details summary {
     justify-content: space-between;
     position: relative;
     transition: 1s ease;
+
     &::after,
     &::before {
         content: "";
@@ -265,9 +284,9 @@ section:nth-of-type(4) details summary {
         right: 20px;
         top: 50%;
         transition: .4s ease;
-     }
+    }
 
-    &::after{
+    &::after {
         transform: rotate(90deg);
     }
 }
@@ -280,6 +299,7 @@ section:nth-of-type(4) details[open] summary::before {
 section:nth-of-type(4) details[open] summary::after {
     transform: rotate(0deg);
 }
+
 section:nth-of-type(4) details[open] summary::before {
     opacity: 0;
 }
@@ -290,7 +310,14 @@ section:nth-of-type(4) a {
 }
 
 section:nth-of-type(4) p {
- font-size: smaller;
+    font-size: smaller;
+}
+
+@media (width > 60em) {
+    section:nth-of-type(4) {
+        display:grid;
+        grid-column: 2/ -1;
+    }
 }
 
 /* section 5 carousel aanbevolen producten */
@@ -361,4 +388,20 @@ section:nth-of-type(5) a img {
     width: 100%;
     aspect-ratio: 5/6;
     order: 1;
+}
+
+@media (width > 60em) {
+    section:nth-of-type(5) {
+        display: grid;
+        grid-column: 1 / -1;;
+
+    }
+
+    section:nth-of-type(5) li {
+        flex-basis: 25%;
+    }
+
+    main section:nth-of-type(5) ul {
+        gap: 1.5em;
+    }
 }
