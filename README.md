@@ -247,7 +247,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Er zijn geen animaties die te veel flashen en de rest isook n.v.t.
 
   # Color contrats
-  Het contrast van de originele site is vreselijk dus ik heb mijn best gedaan om het zo goed mogelijk na te maken met verbeterd contrast van kleur. Ook al is het zwart op wit en voor dark mode wit op zwart kan het toch best zwaar vallen.
+  Het contrast van de originele site  op de header is vreselijk dus ik heb mijn best gedaan om het zo goed mogelijk na te maken met verbeterd contrast. Ook al is het zwart op wit en voor dark mode wit op zwart kan het toch wel lastig zijn tijdens het lezen voor slechtziende of mensen di kleurenblind zijn.
 </details>
 
 
