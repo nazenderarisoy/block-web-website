@@ -30,6 +30,8 @@ body {
 	--color-link-hover: #000000;
 	/* underline */
 	--color-underline: #000000;
+	/* focus visible */
+	--color-focus: rgb(255, 0, 0);	
 
 }
 
@@ -58,6 +60,8 @@ body {
 	--color-link-hover: #ffffff;
 	/* underline */
 	--color-underline: #FFFFFF;
+	/* focus visible */
+	--color-focus: rgb(255, 0, 0);	
 	
 	}
 	
@@ -101,6 +105,10 @@ a:hover {
     text-decoration-thickness: .6em;
     text-decoration: underline;
     text-decoration-color: var(--color-link-hover);
+}
+
+:focus-visible {
+	outline: 2px solid var(--color-focus);
 }
 
 /* header */
