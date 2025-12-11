@@ -31,7 +31,7 @@ body {
 	/* underline */
 	--color-underline: #000000;
 	/* focus visible */
-	--color-focus: rgb(255, 0, 0);	
+	--color-focus: red;	
 
 }
 
@@ -61,7 +61,7 @@ body {
 	/* underline */
 	--color-underline: #FFFFFF;
 	/* focus visible */
-	--color-focus: rgb(255, 0, 0);	
+	--color-focus: red	;	
 	
 	}
 	
