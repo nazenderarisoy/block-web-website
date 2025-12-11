@@ -334,6 +334,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hamburger menu wist ik eerst helemaal niet hoe ik het moest inzetten, maar gelukkig met hulp van Matthijs en Jasmijn is het best nog wel soepel gelukt. Als ik de javascript code van de les niet had zou ik denk ik best nog wel bezig zijn geweest ermee maar voor nu en hoe het er uit ziet vind ik het nog best fraai. 
  <img src="readme-images/hamburgermenuaf.jpeg" width="375px" alt="hamburgertje">
 
+  # animatie (denk ik) van svg logo in header wanneer je scrollt (niet gelukt)
+  Op de echte pagina komt er een andere svg tevoorschijn wanneer je naar beneden scrollt, maar ik zou niet weten hoe ik dat moet doen en ik was zo druk bezig met al mijn andere dingen dat ik er geeneens bij stil stond.
+  <img src="readme-images/header.jpeg" width="375px" alt="headertje">
+
   
 
 </details>
