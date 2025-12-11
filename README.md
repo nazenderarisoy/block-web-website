@@ -261,9 +261,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   Wat tot nu toe goed gaat is dat ik mijn product pagina al deels heb op mobiel formaat. niks is nog responsive maar mijn homepage is wel op mobiel formaat helemaal af. ik geloof wel in mijzelf dat ik het kan halen maar ik wil niet te veel hoop geven aan mijzelf want ik blijf alsnog op de blauwe piste vind ik maakt niet uit hoeveel voortgang ik heb gemaakt in de tussen tijd.
-  <img src="readme-images/voortgang3voorbeeld.jpg" alt="mobielproductpagina">
+  <img src="readme-images/voortgang3voorbeeld.jpeg" alt="mobielproductpagina">
   Op de foto hierboven zie u dat ik nog een beetje moeite heb met hoe ik wat nou neer moet zetten en welke code ik nodig heb maar ik ga zo veel mogelijk proberen van wat ik weet en des noods kijk ik op mozilla voor bronnen.
-  <img src="readme-images/voortgang3voorbeeld2.jpg" alt="mobielproductpagina">
+  <img src="readme-images/voortgang3voorbeeld2.jpeg" alt="mobielproductpagina">
   Op de foto hierboven ziet u ook de breadcrumbs wat ik heel lastig vind want op desktop formaat ziet het er heel anders uit dan mobiel dus ik ben daar nog wel zenuwachtig over hoe ik dat nou precies ga doen.
 
 
@@ -295,33 +295,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je uitkomst - karakteristiek screenshots:
   Waar ik het meest trots op ben is dat ik d.m.v. opdracht 13 van de flexbox ik de carousel in mijn html en css heb kunnen zetten. Ik strugglede wel met de grootte er van maar gelukkig kwam Sanne mij daarmee helpen en met twee simpele codes (flex-shrink, flex-basis) kon ik de carousel ook gelijk toepassen aan mijn tweede pagina waardoor het zo soepel ging dat ik mij er geeneens zorgen om hoefde te maken.
-  <img src="readme-images/carousel.jpg" width="375px" alt="uitomst opdracht 13">
+  <img src="readme-images/carousel.jpeg" width="375px" alt="uitkomstopdracht13">
 
   Waar ik ook erg trots op ben was dat ik Mattijs ene berichtje had gestuurd omdat ik twijfelde over hoe ik mijn footer met display grid op desktop formaat wilde zetten en toen ik het vroeg bleek het toch wel te zijn wat ik in gedachtte had (de hele footer een grid geven) gaf mij dat een beetje hoop en wilde ik het eerst zelf proberen ene beetje in elkaar te hatseflatsen en het was me uiteindelijk toch gelukt dus dat vind ik ook wel een schouder klopje waardig.
-  <img src="readme-images/footer1af.jpg" width="375px" alt="footje">
-  <img src="readme-images/footer2af.jpg" width="375px" alt="footje">
+  <img src="readme-images/footer1af.jpeg" width="375px" alt="1">
+  <img src="readme-images/footer2af.jpeg" width="375px" alt="2">
 
   Het laatste wat mij nog steeds verbaast dat gelukt is is de flexbox van de productpagina waar de maten buttens en h1 etc in zitten. Ik vond het met grid te onhandig ik weet niet waarom maar ik wilde het heel graag met flexbox doen. Toen ik eenmaal begon en ook nog eens door de bron wat hulp had gekregen:"https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex". Begon ik allemaal dingen uit te proberen en toen lukte het mij en durfde ik er eigenlijk niks aan te veranderen voor het geval dat het weer helemaal verkeerd gaat.
-  <img src="readme-images/flexbox.jpg" width="375px" alt="flexboxje">
+  <img src="readme-images/flexbox.jpeg" width="375px" alt="flexboxje">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
   # display:grid
   Door een parent een display grid te geven en daarna op inspecteren ermee te spelen heb ik meer geleerd hoe ik het kan plaatsen op de desktop dan dat ik het met grid garden had geleerd. Ook al was grid garden wel een goede beginners spel en basis vond ik het via inspecteren toch wel leuker om te doen
-  <img src="readme-images/gridvoorbeeld.jpg" width="375px" alt="gridje">
+  <img src="readme-images/gridvoorbeeld.jpeg" width="375px" alt="gridje">
 
   # :root light & dark mode var(--cute-kleurtje)
   Wat ik van :root heb geleerd is dat je gewoon een goede kleurenpallet neer kan zetten in je algemene css en aan de hand daarvan je gehele site in de kleuren kan zetten die je wilt. Het is veel handiger dan bij elke element neer te zetten wat je als text kleur wilt en als achtergrond kleur. als je er zo over na denkt is het zo veel minder gezeik en herschrijven
-  <img src="readme-images/root.jpg" width="375px" alt="rootje">
+  <img src="readme-images/root.jpeg" width="375px" alt="rootje">
 
   # nth-of-type 
   Wat ik van nth-of-type heb geleerd is dat je niet altijd classes hoeft te gebruiken maar dat er ook een andere manier is van elementen oproepen in css. Wij hebben in het eerste jaar natuurlijk alleen geleerd om classes te gebruiken dus het was wel tricky dat je ineens wat anders moest gaan gebruiken wat je nog helemaal niet weet. Al helemaal als je parent child etc begint te horen denk je echt in wat voor groentensoep ben ik in gevallen, maar opzich is het veel strakker werken en specifieker ik heb het alleen maar gebruikt in mijn css eigenlijk (ook omdat ik niet anders kan haha)
-  <img src="readme-images/nthoftype.jpg" width="375px" alt="nthje">
+  <img src="readme-images/nthoftype.jpeg" width="375px" alt="nthje">
 
   # @font-face
   Wat mij ook verbaasde was de font face optie. Vorig jaar moesten we natuurlijk een vreselijke link kopieren vanuit google fonts die er in plakken etc super veel gezeik (vind ik). en nu is het lekker gedownloade fonts in een mapje en je geeft het in je css aan en je hebt hoe je het wilt. Geweldig in my opinion veel beter dan google fonts.
-  <img src="readme-images/fontface.jpg" width="375px" alt="fontfaceje">
+  <img src="readme-images/fontface.jpeg" width="375px" alt="fontfaceje">
 
 
   ### Dit was lastig/Is niet gelukt:
@@ -329,13 +329,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   # hover over foto's carousel zodat een ander plaatje komt (niet gelukt)
   Ik was zo er bezig met mijn pagina's responsive maken en alles zo semantisch en netjes te coderen dat ik het helemaal over me hoofd gevlogen dat dat ook nog eens er bij moest.
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 
-
-  
-
-  # hamburger menu met Javascript eugh (lastig)
-
+  # Hamburger menu met Javascript eugh (lastig)
+  Hamburger menu wist ik eerst helemaal niet hoe ik het moest inzetten, maar gelukkig met hulp van Matthijs en Jasmijn is het best nog wel soepel gelukt. Als ik de javascript code van de les niet had zou ik denk ik best nog wel bezig zijn geweest ermee maar voor nu en hoe het er uit ziet vind ik het nog best fraai. 
+ <img src="readme-images/hamburgermenuaf.jpeg" width="375px" alt="hamburgertje">
 
   
 
