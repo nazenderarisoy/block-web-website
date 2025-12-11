@@ -169,7 +169,7 @@ section:nth-of-type(3) h2 {
     text-transform: uppercase;
     color: var(--color-text-section2);
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.9em;
 }
 
 
@@ -203,7 +203,6 @@ section:nth-of-type(4) article {
 
 section:nth-of-type(4) img {
     width: 100%;
-    display: block;
     object-fit: cover;
     grid-row: 1;
 }
@@ -234,9 +233,6 @@ section:nth-of-type(4) article a {
 }
 
 @media (min-width: 600px) {
-    section:nth-of-type(4) ul {
-        display: block;
-    }
 
     section:nth-of-type(4) article {
         display: grid;

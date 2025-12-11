@@ -28,8 +28,6 @@ body {
 	--color-button-hover-border: #000000;
 	/* links hover */
 	--color-link-hover: #000000;
-	/* border-top */
-	border-top: 1px solid black;
 	/* underline */
 	--color-underline: #000000;
 
@@ -58,8 +56,6 @@ body {
     --color-button-hover-border: #ffffff;
 	/* links */
 	--color-link-hover: #ffffff;
-	/* border-top */
-	border-top: 1px solid white;
 	/* underline */
 	--color-underline: #FFFFFF;
 	
@@ -107,7 +103,7 @@ a:hover {
     text-decoration-color: var(--color-link-hover);
 }
 
-/************************* header ******************/
+/* header */
 header nav:nth-of-type(1) {
 	padding: 0 1rem 0 1rem;
 }
@@ -124,7 +120,7 @@ header nav:nth-of-type(1) ul {
 }
   
 
-header ul:nth-of-type(1) button{
+header :nth-of-type(1) button{
 	background-color: transparent;
 	border:none;
 	cursor: pointer;
@@ -276,7 +272,7 @@ footer:nth-of-type(1) form {
 	padding: 2rem 0.5rem 1rem;
 }
 
-footer:nth-of-type(1) form h3 {
+footer:nth-of-type(1) form h2 {
 	list-style: none;
 	grid-column: 1 / -1;
 	text-transform: uppercase;

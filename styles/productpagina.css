@@ -73,8 +73,6 @@ main section nav {
     order: 1;
 }
 
-
-
 main section nav ul {
     margin: 0;
     padding: 0;
@@ -142,7 +140,7 @@ main section > ul li img {
     display: block;
 }
 
-/* section 3 maat en kleur prijs etc */
+/* section 3 flexbox maat en kleur prijs etc */
 main section:nth-of-type(3) {
     background-color: var(--color-bg-page);
     color: var(--color-text);
@@ -226,7 +224,6 @@ main section:nth-of-type(3) ul button:hover {
 
 }
 
-
 main section:nth-of-type(3) button[aria-label="select white color"] {
     width: 36px;
     height: 36px;
@@ -269,7 +266,7 @@ section:nth-of-type(4) h2 {
     display: none;
 }
 
-/* voortgangsgesprek 3 - Jules en Matthijs hebben mij hiermee geholpen tijdens het voortgangsgesprek ik snap het deels */
+/* voortgangsgesprek 3 - Jules en Matthijs hebben mij hiermee geholpen tijdens het voortgangsgesprek ik snap het niet */
 main section:nth-of-type(4) details summary {
     text-transform: uppercase;
     list-style-type: none;
