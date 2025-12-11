@@ -102,7 +102,7 @@ section:nth-of-type(2) h3 {
     font-size: inherit;
     font-weight: 400;
     overflow: hidden;
-     /* bron van gebruik order: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/order */
+    /* bron van gebruik order: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/order */
     order: 2;
     color: var(--color-text);
 }

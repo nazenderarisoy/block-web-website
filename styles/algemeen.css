@@ -112,28 +112,19 @@ header nav {
 	padding: 0 1rem 0 1rem;
 }
   
-header ul {
-	display: flex;
+header ul:nth-of-type(1) {
+	display: grid;
+	grid-template-columns: repeat(15, 1fr);
 	align-items: center;
 	justify-content: space-between;
 	list-style: none;
-	gap: 0.5rem;
 	padding: 0;
+	height: auto;
 	color: var(--color-bg-header);
 }
   
-header li {
-	display: flex;
-	align-items: center;
-	
-}
-  
-header li:nth-of-type(3) {
-	flex: 1;            
-	justify-content: center;
-}
 
-header button{
+header ul:nth-of-type(1) button{
 	background-color: transparent;
 	border:none;
 	cursor: pointer;
@@ -142,17 +133,39 @@ header button{
 header svg {
 	width: auto;
 	height: auto;
-	color: black;
+	display: grid;
 	color: var(--color-svg);
 }
 
-header li:nth-of-type(3) svg{
+header li:nth-of-type(2) {
 	height: auto;
-	width: 8em;
+	width: auto;
+	grid-column: 8 ;
 	color: var(--color-svg);
 }
 
+header li:nth-of-type(3) {
+	grid-column: 14;
+	height: auto;
+	width: auto;
+}
 
+header nav:nth-of-type(2) {
+	position: fixed;
+	top:0;
+	left: 0;
+	bottom:0;
+	translate: -100% 0;
+	transition: .4s ease;
+	&.is-open{
+		translate: 0;
+	}
+}
+
+header nav:nth-of-type(2) ul {
+	display:flex;
+	flex-direction: column;
+}
 
 /************** FOOTER ***********************/
 /****************** eerste nav ***************/

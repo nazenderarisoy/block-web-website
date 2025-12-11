@@ -2,9 +2,9 @@
 console.log("hi");
 
 // constanten
-const openMenuButton = document.querySelector("header nav button");
-const deNav = document.querySelector("header nav");
-const sluitMenuButton = document.querySelector("header nav button");
+const openMenuButton = document.querySelector("header nav:nth-of-type(1) button");
+const deNav = document.querySelector("header nav:nth-of-type(2)");
+const sluitMenuButton = document.querySelector("header nav:nth-of-type(2) button");
 
 // functies
 function openMenu() {
