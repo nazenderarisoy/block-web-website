@@ -157,11 +157,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Nazender       | Selina             | Jonah         | Callista         |
-  | Css pagina's   | css                | header svg    | nav&header       |
-  | header & footer| flexbox & grid     | icoon header  | h1 hema logo     |
-  | svg foto's     | article&section    |               | visually hidden  |
-  
+  Naz: css pagina's, header & footer, svg foto's
+  Selina: css, flexbox&grid, article & section.
+  Jonah: header svg.
+  Callista: nav&header, h1 visually hidden.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -187,12 +186,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Naz            | Jonah              | Selina       | Callista 4       |
-  | Header &footer | caroussel          | Buttons&links|                  |
-  | caroussel      | en dit             | en ik dit    |                  |
-  | footer css     | dit als er tijd is | nog een punt |                  |
-  | buttons        |                    |              |                  |
-
+  Naz: header&footer, carousel, footer css, buttons.
+  Jonah: carousel.
+  Selina: buttons&links.
+  Callista: N/A
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -212,7 +209,45 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  ### screen reader
+  De screen reader ging opzich wel goed met tabben want hij ging langs elke link, maar buiten dat om ben ik nog totaal niet handig met het gebruik van de screenreader en moet ik er echt wel aan zitten. Ik heb in ieder geval wel een Belgische spreker nu wat ik wel geinig vind. Ik moet nog wel alle tricks van de screenreader even opschrijven zodat ik die tijdens de mondeling kan gebruiken en soepel met de screenreader er door heen kan gaan.
 
+  ### WCAG checklist
+  # Content
+  Wat van de eerste test beide yes was is het nu ook nog steeds zo. beide pagina's zijn in het engels want het is een engelse site die ik na maak en alle buttons links en labels hebben een unieke beschrijving.
+
+  # Global code
+  Mijn HTML heeft bij sommige stukjes die stomme ~ staan en ik weet maar niet hoe ik het weg kan krijgen, maaar buiten dat is mijn code wel valid. Ik heb de engelse language artribute gebruikt en elke pagina heeft een unieke naam. viewportzoom is niet disabled.
+
+  # Keyboard
+  Wanneer je tabt is er duidelijk te zie waar je bent door de blauwe ring die de onderdelen krijgen. Het matcht niet per se de layout maar het is wel fel blauw dus goed te zien in ieder geval.
+
+  # Mobile & Touch 
+  Hij is draaibaar maar niet per se op de mooiste manier. Op de productpagina kan je niet horizontaal scrollen maar op de homepagina wel, ik zou niet weten waarom dit is en wat het veroorzaakt op dit moment. Buttons en links kunnen makkelijk geactiveert worden en zitten op goede positie tijdens het scrollen.
+
+  # Headings
+  Voor de meeste sections gebruik ik headings om te introduceren wat voor content het is. ik gebruik per pagina maar 1 h1. mijn headings zijn in logische volgorde geplaats en ik skip geen levels
+
+  # Lists
+  ik gebruik voor elke soort list content wel een ul.
+
+  # Images
+  Elke img van mij heeft een alt artribuut. de rest is n.v.t.
+
+  # Media
+  ik heb geen videos of audios die automatisch afspelen dus deze hele sectie is n.v.t.
+
+  # Controls
+  ik heb voor alle links een a element gebruikt en je kan ze herkennen als links. zelfde geldt voor buttons. een skip link zit er zeker ook in.
+
+  # Appearance
+  dark & light mode zijn supported en hoog contrast ook (ik had het nog niet toen we dit in de les deden maar ik denk dat het er best goed uit ziet). de rest werkt ook prima (denk ik).
+
+  # Animation
+  Er zijn geen animaties die te veel flashen en de rest isook n.v.t.
+
+  # Color contrats
+  Het contrast van de originele site is vreselijk dus ik heb mijn best gedaan om het zo goed mogelijk na te maken met verbeterd contrast van kleur. Ook al is het zwart op wit en voor dark mode wit op zwart kan het toch best zwaar vallen.
 </details>
 
 
@@ -225,27 +260,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Wat tot nu toe goed gaat is dat ik mijn product pagina al deels heb op mobiel formaat. niks is nog responsive maar mijn homepage is wel op mobiel formaat helemaal af. ik geloof wel in mijzelf dat ik het kan halen maar ik wil niet te veel hoop geven aan mijzelf want ik blijf alsnog op de blauwe piste vind ik maakt niet uit hoeveel voortgang ik heb gemaakt in de tussen tijd.
+  <img src="readme-images/voortgang3voorbeeld.jpg" alt="mobielproductpagina">
+  Op de foto hierboven zie u dat ik nog een beetje moeite heb met hoe ik wat nou neer moet zetten en welke code ik nodig heb maar ik ga zo veel mogelijk proberen van wat ik weet en des noods kijk ik op mozilla voor bronnen.
+  <img src="readme-images/voortgang3voorbeeld2.jpg" alt="mobielproductpagina">
+  Op de foto hierboven ziet u ook de breadcrumbs wat ik heel lastig vind want op desktop formaat ziet het er heel anders uit dan mobiel dus ik ben daar nog wel zenuwachtig over hoe ik dat nou precies ga doen.
+
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Naz            | Jonah              | Selina       | Callista         |
-  | + - transition | ---                | logo & svg   | ---              |
-  | breadcrumbs    | en dit             | foc&fot      | en dan ik dat    |
-  | header         | dit als er tijd is | hamburgermenu| dit wil ik zeker |
-  | carousel       | ...                | grid/margin  | ...              |
+  Naz: + - transition, breadcrumbs, header, carousel
+  Jonah: Geen vragen
+  Selina: logo & svg light dark mode,  hamburgermenu, grid/margin, foc,fot
+  Callista: N/A
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  - Mijn header werkt anders op beide pagina's maar met het advies wat ik van Matthijs en Jules heb gekregen is dat nu gefixed en is het alleen nog finetunen en dan ben k tevreden over mijn headers.
+  - Omdat we tijd over hadden en ik echt niet wist hoe ik moest gaan beginnen aan de + - transition bij mijn product pagina hebben we die ook gelijk gedaan dus dat is ook uit de weg hihi
 </details>
 
 
@@ -258,19 +294,51 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  Waar ik het meest trots op ben is dat ik d.m.v. opdracht 13 van de flexbox ik de carousel in mijn html en css heb kunnen zetten. Ik strugglede wel met de grootte er van maar gelukkig kwam Sanne mij daarmee helpen en met twee simpele codes (flex-shrink, flex-basis) kon ik de carousel ook gelijk toepassen aan mijn tweede pagina waardoor het zo soepel ging dat ik mij er geeneens zorgen om hoefde te maken.
+  <img src="readme-images/carousel.jpg" width="375px" alt="uitomst opdracht 13">
+
+  Waar ik ook erg trots op ben was dat ik Mattijs ene berichtje had gestuurd omdat ik twijfelde over hoe ik mijn footer met display grid op desktop formaat wilde zetten en toen ik het vroeg bleek het toch wel te zijn wat ik in gedachtte had (de hele footer een grid geven) gaf mij dat een beetje hoop en wilde ik het eerst zelf proberen ene beetje in elkaar te hatseflatsen en het was me uiteindelijk toch gelukt dus dat vind ik ook wel een schouder klopje waardig.
+  <img src="readme-images/footer1af.jpg" width="375px" alt="footje">
+  <img src="readme-images/footer2af.jpg" width="375px" alt="footje">
+
+  Het laatste wat mij nog steeds verbaast dat gelukt is is de flexbox van de productpagina waar de maten buttens en h1 etc in zitten. Ik vond het met grid te onhandig ik weet niet waarom maar ik wilde het heel graag met flexbox doen. Toen ik eenmaal begon en ook nog eens door de bron wat hulp had gekregen:"https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex". Begon ik allemaal dingen uit te proberen en toen lukte het mij en durfde ik er eigenlijk niks aan te veranderen voor het geval dat het weer helemaal verkeerd gaat.
+  <img src="readme-images/flexbox.jpg" width="375px" alt="flexboxje">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
+  # display:grid
+  Door een parent een display grid te geven en daarna op inspecteren ermee te spelen heb ik meer geleerd hoe ik het kan plaatsen op de desktop dan dat ik het met grid garden had geleerd. Ook al was grid garden wel een goede beginners spel en basis vond ik het via inspecteren toch wel leuker om te doen
+  <img src="readme-images/gridvoorbeeld.jpg" width="375px" alt="gridje">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  # :root light & dark mode var(--cute-kleurtje)
+  Wat ik van :root heb geleerd is dat je gewoon een goede kleurenpallet neer kan zetten in je algemene css en aan de hand daarvan je gehele site in de kleuren kan zetten die je wilt. Het is veel handiger dan bij elke element neer te zetten wat je als text kleur wilt en als achtergrond kleur. als je er zo over na denkt is het zo veel minder gezeik en herschrijven
+  <img src="readme-images/root.jpg" width="375px" alt="rootje">
+
+  # nth-of-type 
+  Wat ik van nth-of-type heb geleerd is dat je niet altijd classes hoeft te gebruiken maar dat er ook een andere manier is van elementen oproepen in css. Wij hebben in het eerste jaar natuurlijk alleen geleerd om classes te gebruiken dus het was wel tricky dat je ineens wat anders moest gaan gebruiken wat je nog helemaal niet weet. Al helemaal als je parent child etc begint te horen denk je echt in wat voor groentensoep ben ik in gevallen, maar opzich is het veel strakker werken en specifieker ik heb het alleen maar gebruikt in mijn css eigenlijk (ook omdat ik niet anders kan haha)
+  <img src="readme-images/nthoftype.jpg" width="375px" alt="nthje">
+
+  # @font-face
+  Wat mij ook verbaasde was de font face optie. Vorig jaar moesten we natuurlijk een vreselijke link kopieren vanuit google fonts die er in plakken etc super veel gezeik (vind ik). en nu is het lekker gedownloade fonts in een mapje en je geeft het in je css aan en je hebt hoe je het wilt. Geweldig in my opinion veel beter dan google fonts.
+  <img src="readme-images/fontface.jpg" width="375px" alt="fontfaceje">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
+  # hover over foto's carousel zodat een ander plaatje komt (niet gelukt)
+  Ik was zo er bezig met mijn pagina's responsive maken en alles zo semantisch en netjes te coderen dat ik het helemaal over me hoofd gevlogen dat dat ook nog eens er bij moest.
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+
+
+  
+
+  # hamburger menu met Javascript eugh (lastig)
+
+
+  
+
 </details>
 
 
@@ -286,8 +354,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1.https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details (gekregen van Jules en Mattijs tijdens 1e voortgangsgesprek) 
+  1. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details (gekregen van Jules en Mattijs tijdens 1e voortgangsgesprek) 
   2. order css code waarmee ik de plaats heb veranderd : https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/order 
-  3. ...
+  3. flex css code waarmee je in een flexbox iets kan laten groeien of verkleinen :https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex 
 
 </details>
