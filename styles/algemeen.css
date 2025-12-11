@@ -1,13 +1,71 @@
 body {
 	margin: 0;
+	background-color: var(--color-bg-page);
+	overflow-x: hidden;
 }
 
+
 /* custom propreties */
-/* :root {
- 
-} */
+:root {
+	--color-bg-page: #ffffff;
+	--color-text: #000000;
+	--color-text-section2: #FFFFFF;
+	/* header */
+	--color-bg-header: rgba(255, 255, 255, 0.28);
+	--color-header-overlay: rgba(255, 255, 255, 0.24);
+	/* footer */
+	--color-bg-footer: #ffffff;
+	/* section specifieke tint */
+	--color-bg-section4: #F2F1EF;
+	/* iconen */
+	--color-svg: #000000;
+	/*  button  */
+	--color-button-bg: #000000;
+	--color-button-text: #ffffff;
+	--color-button-border: #000000;
+	--color-button-hover-bg: #ffffff;
+	--color-button-hover-text: #000000;
+	--color-button-hover-border: #000000;
+	/* links hover */
+	--color-link-hover: #000000;
+	/* border-top */
+	border-top: 1px solid black;
+	/* underline */
+	--color-underline: #000000;
 
+}
 
+@media (prefers-color-scheme: dark) {
+	:root {
+	--color-bg-page: #000000;
+	--color-text: #ffffff;
+	--color-text-section2: #FFFFFF;
+	/* header */
+	--color-bg-header: rgba(0, 0, 0, 0.386);
+	--color-header-overlay: rgba(0, 0, 0, 0.24);
+	/* footer */
+	--color-bg-footer: #000000;
+	/* section specifieke tint */
+	--color-bg-section4: #111111; 
+	/* iconen */
+	--color-svg: #ffffff;
+	/*  button  */
+	--color-button-bg: #ffffff;
+    --color-button-text: #000000;
+    --color-button-border: #ffffff;
+    --color-button-hover-bg: #000000;
+    --color-button-hover-text: #ffffff;
+    --color-button-hover-border: #ffffff;
+	/* links */
+	--color-link-hover: #ffffff;
+	/* border-top */
+	border-top: 1px solid white;
+	/* underline */
+	--color-underline: #FFFFFF;
+	
+	}
+	
+}
 
 /* font */
 
@@ -32,7 +90,7 @@ body {
 .skip-link{
 	position: absolute;
 	left: 999em;
-	&:focus{
+	&:focus {
 		left:0em;
 		position:absolute;
 	}
@@ -46,7 +104,7 @@ a:hover {
     text-underline-offset: .8em;
     text-decoration-thickness: .6em;
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: var(--color-link-hover);
 }
 
 /************************* header ******************/
@@ -61,11 +119,13 @@ header ul {
 	list-style: none;
 	gap: 0.5rem;
 	padding: 0;
+	color: var(--color-bg-header);
 }
   
 header li {
 	display: flex;
 	align-items: center;
+	
 }
   
 header li:nth-of-type(3) {
@@ -77,22 +137,36 @@ header button{
 	background-color: transparent;
 	border:none;
 	cursor: pointer;
+	color: var(--color-button);
 }
 header svg {
 	width: auto;
 	height: auto;
 	color: black;
+	color: var(--color-svg);
 }
 
 header li:nth-of-type(3) svg{
 	height: auto;
 	width: 8em;
+	color: var(--color-svg);
 }
+
+
 
 /************** FOOTER ***********************/
 /****************** eerste nav ***************/
+
+
 footer section:nth-of-type(1) nav {
 	font-family: "westwood";
+	background-color: var(--color-bg-page);
+	color: var(--color-text);
+}
+
+footer section:nth-of-type(1) h2 {
+	display: none;
+	color: var(--color-text);
 }
 
 footer section:nth-of-type(1) nav ul {
@@ -103,22 +177,23 @@ footer section:nth-of-type(1) nav ul {
 	list-style: none;
 	padding: 7rem 1rem 1rem 1rem;
 	margin: 0;
-
+	background-color: var(--color-bg-page);
 }
 
 footer section:nth-of-type(1) nav li {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+	background-color: var(--color-bg-page);
 }
 
 footer section:nth-of-type(1) nav a {
 	padding: 2rem;
-	color: black;
+	color: var(--color-text);
 }
 
 footer section:nth-of-type(1) nav svg {
-	color: black;
+	color:  var(--color-svg);
 }
 
 footer section:nth-of-type(1) nav p {
@@ -129,6 +204,7 @@ footer section:nth-of-type(1) nav p {
 	line-height: 1.5em;
 	font-size: 0.875em;
 	margin: 0;
+	color: var(--color-text);
 }
 
 /******************* subcribe form ***************/
@@ -136,16 +212,15 @@ footer:nth-of-type(1) form {
 	font-family: "westwood";
 	font-size: 1rem;
 	display: grid;
-	background-color: rgb(255, 255, 255);
-	color: black;
+	background-color:  var(--color-bg-page);
+	color: var(--color-text);
 	grid-template-columns: 1fr max-content;
-	padding: 1rem 0.5rem 1rem;
+	padding: 2rem 0.5rem 1rem;
 }
 
 footer:nth-of-type(1) form h3 {
 	list-style: none;
 	grid-column: 1 / -1;
-	/* laat de titel over beide kolommen lopen */
 	text-transform: uppercase;
 	font-family: inherit;
 	font-size: smaller;
@@ -153,20 +228,22 @@ footer:nth-of-type(1) form h3 {
 	letter-spacing: 0.09375rem;
 	margin: 0;
 	padding: 0.5rem 1em 0em;
+	background-color: var(--color-bg-page);
+	color: var(--color-text);
 }
 
 footer:nth-of-type(1) form input {
-	border: white;
+	border:none;
 	padding: 0.5rem 1em;
 	font-size: 1rem;
-	outline: none;
-
+	background-color: var(--color-bg-page);
+	color: var(--color-text);
 }
 
 footer:nth-of-type(1) form button {
 	width: auto;
 	border: none;
-	background-color: white;
+	background-color:var(--color-bg-page);
 	cursor: pointer;
 }
 
@@ -174,15 +251,17 @@ footer:nth-of-type(1) form svg {
 	width: 24px;
 	height: 24px;
 	padding: 4em 3em;
+	color: var(--color-svg);
 }
 
 
 /* social media nav */
 footer section:nth-of-type(2) {
 	font-family: "westwood";
-	background-color: rgb(255, 255, 255);
+	background-color: var(--color-bg-page);
 	padding: 2rem 2.5rem 0rem 0rem;
 }
+
 
 footer section:nth-of-type(2) nav ul {
 	list-style-type: "";
@@ -190,6 +269,7 @@ footer section:nth-of-type(2) nav ul {
 	justify-content: flex-start;
 	gap:0.25rem;
 	padding-left: 1.5em;
+	background-color: var(--color-bg-page);
 }
 
 footer section:nth-of-type(2) nav li {
@@ -197,9 +277,10 @@ footer section:nth-of-type(2) nav li {
 	padding: 0;
 	flex-basis: 8%;
 	padding-right: 0.5rem;
+	background-color: var(--color-bg-page);
 }
 
-footer section:nth-of-type(2) nav h3 {
+footer section:nth-of-type(2) nav h2 {
 	padding: 0rem 0rem 0rem 1.5rem; 
 	margin: 0;   
 	text-transform: uppercase;
@@ -208,6 +289,7 @@ footer section:nth-of-type(2) nav h3 {
 
 	line-height: 1.4;
 	letter-spacing: 0.09375rem;
+	color: var(--color-text);
 }
 
 footer section:nth-of-type(2) nav svg {
@@ -216,7 +298,7 @@ footer section:nth-of-type(2) nav svg {
 	padding: 0;
 	width: 16px;
 	height: 16px;
-	color: black;
+	color: var(--color-svg);
 	
 }
 
@@ -225,21 +307,28 @@ footer section:nth-of-type(2) nav a {
 	margin: 0;
 	padding: 0;
 	line-height: 0;
+	color: var(--color-text);
 }
-
-
-
 
 /* detials nav */
 footer section:nth-of-type(3) {
 	font-family: "westwood";
-	background-color: rgb(255, 255, 255);
+	background-color: var(--color-bg-page);
+	color: var(--color-text);
+}
+
+footer section:nth-of-type(3) h2{
+	display: none;
+	background-color: var(--color-bg-page);
+	color: var(--color-text);
 }
 
 footer section:nth-of-type(3) nav details {
 	font-family: inherit;
 	text-transform: uppercase;
 	padding: 1.5em 1em 2em 1.5em;
+	background-color: var(--color-bg-page);
+	color: var(--color-text);
 }
 
 footer section:nth-of-type(3) nav summary {
@@ -250,6 +339,8 @@ footer section:nth-of-type(3) nav summary {
 
 	line-height: 1.4;
 	letter-spacing: 0.09375rem;
+	background-color: var(--color-bg-page);
+	color: var(--color-text);
 }
 
 footer section:nth-of-type(3) nav ul {
@@ -258,12 +349,14 @@ footer section:nth-of-type(3) nav ul {
 	display: flex;
   	flex-direction: column;
 	gap: 0.75rem;
+	background-color: var(--color-bg-page);
 }
 
 footer section:nth-of-type(3)nav li {
 	font-family: inherit;
 	list-style-type: "";
 	padding-bottom: 5em;
+	background-color: var(--color-bg-page);
 
 }
 
@@ -274,6 +367,7 @@ footer section:nth-of-type(3) nav a {
 	text-transform: none;
 	font-family: inherit;
 	font-size: small;
+	color: var(--color-text);
 }
 
 @media(width > 64em) {
@@ -281,8 +375,9 @@ footer section:nth-of-type(3) nav a {
 		display: grid;
 		grid-template-columns: repeat(12,1fr);
 		column-gap: 2rem;
-		row-gap: 3rem;
+		row-gap: 0.5rem;
 		padding: 2rem 2rem 0 2rem;
+		background-color: var(--color-bg-footer);
 	}
 	/* eerste section */
 	footer section:nth-of-type(1) {

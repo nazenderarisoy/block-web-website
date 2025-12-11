@@ -2,11 +2,9 @@ header {
 	position:fixed;
 	z-index: 1;
 	min-width: 100%;
-	background-color: rgba(255, 255, 255, 0.28);
+	background-color: var(--color-bg-header);
 	padding: 0;
 	margin: 0;
-	/* van eigen website overgenomen begrijp het niet */
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0));
 }
 
 /****************** !!!SECTION 1!!! *****************/
@@ -15,6 +13,7 @@ section:nth-of-type(1) {
     flex-direction: column;
     align-items: center;
     font-family: "westwood";
+    background-color: var(--color-bg-page)
 }
 
 section:nth-of-type(1) h1 {
@@ -23,36 +22,43 @@ section:nth-of-type(1) h1 {
     text-align: center;
     font-size: 2.5em;
     line-height: 3rem;
-    order:2;
-    color: var(--color-text-home)
+    /* bron van gebruik order: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/order */
+    order:2;  
+    color: var(--color-text);
+    background-color: var(--color-bg-page)
 }
 
 section:nth-of-type(1) img {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0));
     position: relative;
     width: 100%;
-
+     /* bron van gebruik order: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/order */
     order: 1;
 }
 
 section:nth-of-type(1) a {
-    color: black;
+    color: var(--color-text);
     text-align: center;
+     /* bron van gebruik order: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/order */
     order:3;
     padding: 1em;;
+    color: var(--color-text);
 }
 
 
 
 /***************** !!!SECTION 2 CAROUSELL!!! ***************/
+/* bron carousel codepen opdracht 13 & hulp van Sanne tijdens de les */
 section:nth-of-type(2) {
     font-family: "westwood";
+    color: var(--color-text);
+    background-color: var(--color-bg-page);
 }
 
 section:nth-of-type(2) h2 {
     font-weight: 400;
     line-height: 1.26;
-    font-size: 22px;
+    font-size: 1.5em;
     font-family: inherit;
     position: relative;
     z-index: 1;
@@ -64,7 +70,7 @@ main section:nth-of-type(2) ul {
     padding: 1rem 1rem 0rem 1rem;
     list-style-type: "";
 
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-bg-page);
 
     display: flex;
     overflow-x: auto;
@@ -96,7 +102,9 @@ section:nth-of-type(2) h3 {
     font-size: inherit;
     font-weight: 400;
     overflow: hidden;
+     /* bron van gebruik order: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/order */
     order: 2;
+    color: var(--color-text);
 }
 
 section:nth-of-type(2) p {
@@ -105,13 +113,16 @@ section:nth-of-type(2) p {
     justify-content: center;
     align-items: center;
     line-height: 0.2rem;
+     /* bron van gebruik order: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/order */
     order:3;
+    color: var(--color-text);
 }
 
 section:nth-of-type(2) img {
     width: 100%;
-    aspect-ratio: 5/6;
+    aspect-ratio: 5/6; 
     object-fit: cover;
+     /* bron van gebruik order: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/order */
     order: 1;
 }
 
@@ -133,7 +144,7 @@ section:nth-of-type(3) {
     font-family: "westwood";
     width: 100%;
     gap: 1em;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-bg-page);
     padding: 7em 0em 7em 0em;
 }
 section:nth-of-type(3) article {
@@ -156,7 +167,7 @@ section:nth-of-type(3) h2 {
     position: relative;
     font-family: inherit;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color: var(--color-text-section2);
     font-weight: 400;
     font-size: 30px;
 }
@@ -164,7 +175,7 @@ section:nth-of-type(3) h2 {
 
 /******************** !!!SECTION 4!!! ****************/
 section:nth-of-type(4) {
-    background-color: #F2F1EF;
+    background-color: var(--color-bg-section4);
     font-family: "westwood";
     padding: 0;
 }
@@ -206,6 +217,8 @@ section:nth-of-type(4)  h2 {
     margin: 0;
     padding-top: 2em;
     grid-row: 2;
+    color: var(--color-text);
+    
 }
 
 section:nth-of-type(4) article nav {
@@ -216,6 +229,8 @@ section:nth-of-type(4) article a {
     color: black;
     padding: 1em 1em 4em 1em;
     display: inline-block;
+    color: var(--color-text);
+    
 }
 
 @media (min-width: 600px) {
