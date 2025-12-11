@@ -8,28 +8,6 @@ header {
     margin: 0;
     background-color: var(--color-bg-header);
 }
-
-header svg {
-	width: auto;
-	height: auto;
-	display: grid;
-	color: var(--color-svg);
-}
-
-header li:nth-of-type(2) {
-	height: auto;
-	width: auto;
-	grid-column: 2 ;
-	color: var(--color-svg);
-}
-
-header li:nth-of-type(3) {
-	grid-column: 8;
-}
-
-header li:nth-of-type(4) {
-    grid-column: 14;
-}
 /* section 1  breadcrumbs (met behulp van matthijs en ook met responsive hulp gekregen) */
 main section:nth-of-type(1) ul {
     font-family: "westwood";
