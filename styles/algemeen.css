@@ -302,8 +302,8 @@ footer:nth-of-type(1) form button {
 }
 
 footer:nth-of-type(1) form svg {
-	width: 24px;
-	height: 24px;
+	width: 1.5em;
+	height: 1.5em;
 	padding: 4em 3em;
 	color: var(--color-svg);
 }
